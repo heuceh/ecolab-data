@@ -1,6 +1,80 @@
 logement:
   couleur: '#04a4ac'
   icônes: 🏘
+  formule: résidence 
+
+résidence : 
+  question: Habitez-vous dans une résidence INSA ? 
+  par défaut: non
+
+ logement . résidence :
+   question: Habitez-vous dans une résidence INSA ? 
+   variations:
+      - si: résidence
+        alors: résidence.numéro
+      - sinon: résidence.normal
+      
+logement . résidence : 
+
+  par défaut: non
+    rend non applicable:
+    - contrat salarié . convention collective
+
+logement.résidence.numéro:
+  applicable si: résidence
+  question: Dans quelle résidence ? 
+  formule: 
+    une possibilité: 
+      choix obligatoire: oui
+      possibilités: 
+        - R1
+        - R2
+        - R3
+        - R4
+        - R5
+        - R6
+        - R7
+        - R8
+  par défaut: R3
+logement . résidence . numéro . R1: 
+logement . résidence . numéro . R2: 
+logement . résidence . numéro . R3:
+logement . résidence . numéro . R4:
+logement . résidence . numéro . R5:
+logement . résidence . numéro . R6:
+logement . résidence . numéro . R7:
+logement . résidence . numéro . R8:
+ 
+logement . résidence . numéro . R1 . m²:
+  applicable si: R1
+  question: Taille de votre appartement (m²) ? 
+  formule: 
+    une possibilité: 
+      choix obligatoire: oui
+      possibilités: 
+        - 11m²
+        - 15m²
+        - coloc
+  par défaut: 15m²
+logement . résidence . numéro . R1 . R1m² . R111m²:
+logement . résidence . numéro . R1 . R1m² . R115m²:
+
+logement . résidence . numéro . R1 . R1m² . R111m² :
+  formule:  0
+  unité: kgCO2e
+  
+logement . résidence . numéro . R1 . R1m² . R115m² :
+  formule:  0
+  unité: kgCO2e
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+logement . résidence . normal :
   formule: impact / habitants
 
 logement . impact:
