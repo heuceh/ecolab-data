@@ -10,7 +10,14 @@ divers:
 
 divers . textile: 
   icônes: 👗
-  formule: 0.5 * montant  
+  formule: 
+    somme : 
+      - pull
+      - jeans
+      - chaussures
+      - tee-shirts
+      - manteaux
+      
   unité: kgCO2e
 divers . textile . montant: 
   question: Combien dépensez-vous par an en textiles acheté neuf ?
@@ -19,7 +26,21 @@ divers . textile . montant:
   unité: €/an
   par défaut: 1000
 
+divers . textile . pull:
+  icônes: 
+  formule: impact *nombre
+  unité: kgCO2e
 
+divers . textile . pull . nombre :
+  question: Combien achetez vous de pulls neuf par ans ? 
+  description: 
+  unité: pull
+  par défaut: 1
+
+divers . textile . pull . impact :
+  icônes: 
+  formule: 30
+  unité: kgCO2e/u
 
 divers . électroménager: 
   icônes: 👗
