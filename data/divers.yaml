@@ -116,7 +116,79 @@ divers . électroménager:
      -réfrigérateur
      -congélateur
      -sèche-linge
+  
+ 
+ divers . électroménager . aspirateur:
+  icônes:
+  applicable si: affirmatif
+  formule: 7
+  unité: kgCO2e
 
+ divers . électroménager . four:
+  icônes:
+  applicable si: affirmatif
+  formule: 17
+  unité: kgCO2e
+  
+   divers . électroménager . micro-ondes:
+  icônes:
+  applicable si: affirmatif
+  formule: 15
+  unité: kgCO2e
+  
+   divers . électroménager . lave-vaisselle:
+  icônes:
+  applicable si: affirmatif
+  formule: 40
+  unité: kgCO2e
+
+ divers . électroménager . lit:
+  icônes:
+  applicable si: affirmatif
+  formule: 25
+  unité: kgCO2e
+  
+ divers . électroménager . réfrigérateur:
+  icônes:
+  applicable si: affirmatif
+  formule: 30
+  unité: kgCO2e
+
+ divers . électroménager . congélateur:
+  icônes:
+  applicable si: affirmatif
+  formule: 35
+  unité: kgCO2e
+  
+   divers . électroménager . table+chaises:
+  icônes:
+  applicable si: affirmatif
+  formule: 25
+  unité: kgCO2e
+
+ divers . électroménager . canapé:
+  icônes:
+  applicable si: affirmatif
+  formule: 19
+  unité: kgCO2e
+  
+ divers . électroménager . armoire:
+  icônes:
+  applicable si: affirmatif
+  formule: 58
+  unité: kgCO2e
+
+ divers . électroménager . machine à laver:
+  icônes:
+  applicable si: affirmatif
+  formule: 45
+  unité: kgCO2e
+
+ divers . électroménager . sèche-linge:
+  icônes:
+  applicable si: affirmatif
+  formule: 42
+  unité: kgCO2e
 
 divers . autres produits: 
   icônes: 👗
