@@ -12,39 +12,110 @@ divers . textile:
   icônes: 👗
   formule: 
     somme : 
-      - pull
+      - pulls
       - jeans
       - chaussures
       - tee-shirts
       - manteaux
       
-divers . textile . pull:
+divers . textile . pulls:
   icônes: 
   formule: impact *nombre
   unité: kgCO2e
 
-divers . textile . pull . nombre :
-  question: Combien achetez vous de pulls neuf par ans ? 
+divers . textile . pulls . nombre :
+  question: Combien achetez-vous de pulls neufs par an ? 
   description: 
   unité: pull
   par défaut: 1
 
-divers . textile . pull . impact :
+divers . textile . pulls . impact :
   icônes: 
   formule: 30
   unité: kgCO2e/u
+  
+divers . textile . jeans :
+  icônes: 
+  formule: impact *nombre
+  unité: kgCO2e
+
+divers . textile . jeans . nombre :
+  question: Combien achetez-vous de jeans neuf par an ? 
+  description: 
+  unité: jean
+  par défaut: 1
+
+divers . textile . jeans . impact :
+  icônes: 
+  formule: 25
+  unité: kgCO2e/u
+  
+  divers . textile . chaussures:
+  icônes: 
+  formule: impact *nombre
+  unité: kgCO2e
+
+divers . textile . chaussures. nombre :
+  question: Combien achetez-vous de paire de chaussures neuves par an ? 
+  description: 
+  unité: chaussures
+  par défaut: 1
+
+divers . textile . chaussures . impact :
+  icônes: 
+  formule: 17
+  unité: kgCO2e/u
+  
+  divers . textile . tee-shirts :
+  icônes: 
+  formule: impact *nombre
+  unité: kgCO2e
+
+divers . textile . tee-shirts. nombre :
+  question: Combien achetez-vous de tee-shirts neufs par an ? 
+  description: 
+  unité: tee-shirts
+  par défaut: 1
+
+divers . textile . tee-shirts . impact :
+  icônes: 
+  formule: 7
+  unité: kgCO2e/u
+  
+   divers . textile . manteaux :
+  icônes: 
+  formule: impact *nombre
+  unité: kgCO2e
+
+divers . textile . manteaux. nombre :
+  question: Combien achetez-vous de manteaux neufs par an ? 
+  description: 
+  unité: manteaux
+  par défaut: 1
+
+divers . textile . manteaux . impact :
+  icônes: 
+  formule: 40
+  unité: kgCO2e/u 
+  
+
 
 divers . électroménager: 
   icônes: 👗
-  formule: 1 * montant  
-  unité: kgCO2e
-
-divers . électroménager . montant: 
-  question: Combien dépensez-vous par an en électroménager acheté neuf ? 
-  description: Nous excluons du calcul la récupération et l'occasion.
-  unité: €/an
-  par défaut: 1200
-
+  formule: 
+    somme : 
+     -aspirateur
+     -four
+     -micro-ondes
+     -lit
+     -lave-vaisselle
+     -machine à laver
+     -canapé
+     -armoire
+     -table+chaises
+     -réfrigérateur
+     -congélateur
+     -sèche-linge
 
 
 divers . autres produits: 
