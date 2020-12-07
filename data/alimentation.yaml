@@ -602,28 +602,28 @@ alimentation . insa . Nbjour:
 alimentation . insa . MenuRU: 
   formule: 
     variations:
-      -si : type = 'Menu1'
-       alors : Menu1
-     -si : type= 'Menu2'
-      alors: Menu2
-    -si : type ='Végétarien'
-      alors : Végétarien
-    -si : type ='Grillade'
-      alors Grillade
-   -sinon :0
+      - si : type = 'Menu1'
+        alors : Menu1
+      - si : type= 'Menu2'
+        alors : Menu2
+      - si : type ='Végétarien'
+        alors : Végétarien
+      - si : type ='Grillade'
+        alors : Grillade
+      - sinon: 0
   
 
-alimentation.insa.type:
+alimentation . insa . type:
   question : Quel type de menu prenez vous le plus souvent au RU ?
-  description: |
+  description : |
   par défaut : Menu1
   formule:
     une possibilité:
       choix obligatoire: oui
       possibilités:
-      -Menu1
-      -Menu2
-      -Végétarien
-      -Grillade
+        - Menu1
+        - Menu2
+        - Végétarien
+        - Grillade
 
 
