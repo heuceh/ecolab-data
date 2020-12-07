@@ -593,19 +593,19 @@ alimentation . insa:
 
 alimentation . insa . Nbjour: 
   question: Combien de fois par semain mangez-vous au RU en moyenne ?
-  description :
+  description : enlever ce nb de repas au nb repas total calculer plus haut
   unité : jour
-  par défaut: 5
+  par défaut: 0
   
   
   
 alimentation . insa . MenuRU: 
   formule: 
     variations:
-      -si : type = 'Viande1'
-       alors : Viande1
-     -si : type= 'Viande2'
-      alors: Viande2
+      -si : type = 'Menu1'
+       alors : Menu1
+     -si : type= 'Menu2'
+      alors: Menu2
     -si : type ='Végétarien'
       alors : Végétarien
     -si : type ='Grillade'
@@ -616,23 +616,14 @@ alimentation . insa . MenuRU:
 alimentation.insa.type:
   question : Quel type de menu prenez vous le plus souvent au RU ?
   description: |
-  par défaut : Viande1
-  formule
-
-#alimentation . petit déjeuner . type: 
-  question: Quel petit déjeuner vous correspond le plus ?
-  description: |
-    Il existe une variété infinie de petit déjeuners. Nous en avons sélectionné quelques uns pour que vous obteniez une réponse facilement.
-
-    Il manque votre petit déjeuner et vous pensez ne pas pas être le seul à l'apprécier ? [Écrivez-nous](/contribuer).
-
-  par défaut: français
+  par défaut : Menu1
   formule:
-    une possibilité: 
+    une possibilité:
       choix obligatoire: oui
-      possibilités: 
-        - français
-          #        - britannique
-        - lait céréales
-          # - lait végétal céréales
-        - aucun
+      possibilités:
+      -Menu1
+      -Menu2
+      -Végétarien
+      -Grillade
+
+
