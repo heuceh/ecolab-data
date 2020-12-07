@@ -50,7 +50,7 @@ divers . textile . jeans . impact :
   formule: 25
   unité: kgCO2e/u
   
-  divers . textile . chaussures:
+divers . textile . chaussures:
   icônes: 
   formule: impact *nombre
   unité: kgCO2e
@@ -66,7 +66,7 @@ divers . textile . chaussures . impact :
   formule: 17
   unité: kgCO2e/u
   
-  divers . textile . tee-shirts :
+divers . textile . tee-shirts :
   icônes: 
   formule: impact *nombre
   unité: kgCO2e
@@ -82,7 +82,7 @@ divers . textile . tee-shirts . impact :
   formule: 7
   unité: kgCO2e/u
   
-   divers . textile . manteaux :
+divers . textile . manteaux :
   icônes: 
   formule: impact *nombre
   unité: kgCO2e
@@ -97,144 +97,142 @@ divers . textile . manteaux . impact :
   icônes: 
   formule: 40
   unité: kgCO2e/u 
-  
-
 
 divers . électroménager: 
   icônes: 👗
   formule: 
     somme : 
-     -aspirateur
-     -four
-     -micro-ondes
-     -lit
-     -lave-vaisselle
-     -machine à laver
-     -canapé
-     -armoire
-     -table+chaises
-     -réfrigérateur
-     -congélateur
-     -sèche-linge
+      - aspirateur
+      - four
+      - micro-ondes
+      - lit
+      - lave-vaisselle
+      - machine à laver
+      - canapé
+      - armoire
+      - table+chaises
+      - réfrigérateur
+      - congélateur
+      - sèche-linge
   
  
- divers . électroménager . aspirateur:
+divers . électroménager . aspirateur:
   icônes:
   applicable si: affirmatif
   formule: 7
   unité: kgCO2e
   
-  divers . électroménager . aspirateur. affirmatif:
+divers . électroménager . aspirateur. affirmatif:
   titre: aspirateur
   question: Avez vous un aspirateur?
   par défaut: non
 
- divers . électroménager . four:
+divers . électroménager . four:
   icônes:
   applicable si: affirmatif
   formule: 17
   unité: kgCO2e
   
-  divers . électroménager . four. affirmatif:
+divers . électroménager . four. affirmatif:
   titre: four
   question: Avez vous un four?
   par défaut: non
   
-   divers . électroménager . micro-ondes:
+divers . électroménager . micro-ondes:
   icônes:
   applicable si: affirmatif
   formule: 15
   unité: kgCO2e
   
-  divers . électroménager . micro-ondes. affirmatif:
+divers . électroménager . micro-ondes. affirmatif:
   titre: micro-ondes
   question: Avez vous un micro-ondes?
   par défaut: non
   
-   divers . électroménager . lave-vaisselle:
+divers . électroménager . lave-vaisselle:
   icônes:
   applicable si: affirmatif
   formule: 40
   unité: kgCO2e
   
-  divers . électroménager . lave-vaisselle. affirmatif:
+divers . électroménager . lave-vaisselle. affirmatif:
   titre: lave-vaisselle
   question: Avez vous un lave-vaisselle?
   par défaut: non
 
- divers . électroménager . lit:
+divers . électroménager . lit:
   icônes:
   formule: 25
   unité: kgCO2e
   
   
- divers . électroménager . réfrigérateur:
+divers . électroménager . réfrigérateur:
   icônes:
   applicable si: affirmatif
   formule: 30
   unité: kgCO2e
 
- divers . électroménager . réfrigérateur. affirmatif:
+divers . électroménager . réfrigérateur. affirmatif:
   titre: réfrigérateur
   question: Avez vous un réfrigérateur?
   par défaut: non
 
- divers . électroménager . congélateur:
+divers . électroménager . congélateur:
   icônes:
   applicable si: affirmatif
   formule: 35
   unité: kgCO2e
   
-   divers . électroménager . congélateur. affirmatif:
+divers . électroménager . congélateur. affirmatif:
   titre: congélateur
   question: Avez vous un congélateur?
   par défaut: non
   
-   divers . électroménager . table+chaises:
+divers . électroménager . table+chaises:
   icônes:
   formule: 25
   unité: kgCO2e
 
- divers . électroménager . canapé:
+divers . électroménager . canapé:
   icônes:
   applicable si: affirmatif
   formule: 19
   unité: kgCO2e
   
-   divers . électroménager . canapé. affirmatif:
+divers . électroménager . canapé. affirmatif:
   titre: canapé
   question: Avez vous un canapé?
   par défaut: non
   
- divers . électroménager . armoire:
+divers . électroménager . armoire:
   icônes:
   applicable si: affirmatif
   formule: 58
   unité: kgCO2e
   
-   divers . électroménager . armoire. affirmatif:
+divers . électroménager . armoire. affirmatif:
   titre:armoire
   question: Avez vous une armoire?
   par défaut: non
 
- divers . électroménager . machine à laver:
+divers . électroménager . machine à laver:
   icônes:
   applicable si: affirmatif
   formule: 45
   unité: kgCO2e
   
-   divers . électroménager . machine à laver. affirmatif:
+divers . électroménager . machine à laver. affirmatif:
   titre: machine à laver
   question: Avez vous une machine à laver?
   par défaut: non
 
- divers . électroménager . sèche-linge:
+divers . électroménager . sèche-linge:
   icônes:
   applicable si: affirmatif
   formule: 42
   unité: kgCO2e
   
-   divers . électroménager . sèche-linge. affirmatif:
+divers . électroménager . sèche-linge. affirmatif:
   titre: sèche-linge
   question: Avez vous un sèche-linge?
   par défaut: non
@@ -256,8 +254,4 @@ divers . autres produits . montant:
 
   note: Cette catégorie est assez vague, il faudrait au moins donner plus d'exemples.
   par défaut: 2000
-
-
-
-
 
