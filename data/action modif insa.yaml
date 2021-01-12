@@ -32,104 +32,104 @@ réduire par deux la viande.impact changement. compensation:
 Formule: (-1)*(alimentation . nombre de plats viande)*alimentation . plats . végétalien . empreinte
 
 action. écoconduite:
-Unité :%
+Unité : %
 Formule : (impact changement)*(100/bilan)
 Ecoconduite.impact changement :
-Unité :kgCO2e
-Formule :transport.voiture*0.2
+Unité : kgCO2e
+Formule : transport.voiture*0.2
 
 action. covoiturage:
 Non Applicable si : trasnport.voiture < 1000
-Unité :%
-Formule :(impact changement)*(100/bilan)
+Unité : %
+Formule : (impact changement)*(100/bilan)
 Covoiturage.impact changement :
-Unité :kgCO2e
+Unité : kgCO2e
 Formule : transport.voiture*0.2
 
 action. prendre les transports en commun:
-Unité :%
+Unité : %
 Formule : (impact changement)*(100/bilan)
 Prendre les transports en commun.impact changement:
-Unité:kgCO2e
+Unité: kgCO2e
 Formule:
 somme:
 Voiture.impact usage
 compensation
-	Prendre les transports en commun.impact changement.compensation:
-	formule:(-1)*transport.voiture.km*0.04
+Prendre les transports en commun.impact changement.compensation:
+Formule: (-1)*transport.voiture.km*0.04
 
 Description: j’ai calculé l’impact moyen par km selon les données d’écolab et avec les vitesses moyennes
 https://sites.google.com/site/metrotramrer/technique/comparaison-vitesse-moyenne
 
 action.prendre le train pour des trajets courts:
 Non.applicable.si : transport . avion . court courrier=0
-Unité :%
+Unité : %
 Formule : (impact changement)*(100/bilan)
 prendre le train pour des trajets courts.impact changement :
-Unité :kgCO2e
+Unité : kgCO2e
 Formule :
-somme
+somme:
 transport . avion . court courrier
 compensation
 prendre le train pour des trajets courts.impact changement.compensation :
-Formule :(transport . avion . court courrier/0.230)*empreinte train
+Formule : (transport . avion . court courrier/0.230)*empreinte train
 prendre le train pour des trajets courts.impact changement.compensation.empreinte train :
-Formule :0.006
+Formule : 0.006
  Description: on calcule ce qu’on gagne en arrêtant l’avion pour les longs courriers et on remplace par des trajets en train 
  (le calcul représente le nombre de km en avion court courrier multiplié par l’empreinte au km du train)
 
 action. Baisser le chauffage d'1°C:
-Unité :%
-Formule :(impact changement)*(100/bilan)
+Unité : %
+Formule : (impact changement)*(100/bilan)
 Baisser le chauffage d'1°C.impact changement :
-Unité :kgCO2e
-Formule :0.07* electricité* 33.8 / 143
+Unité : kgCO2e
+Formule : 0.07* electricité* 33.8 / 143
 
 action. éteindre les appareils en veille:
-Unité :%
+Unité : %
 Formule : (impact changement)*(100/bilan)
 éteindre les appareils en veille.impact changement :
-Unité :kgCO2e
+Unité : kgCO2e
 Formule : 0.05*365*12*0.057
 Description : kwh/H *nb d’heures *empreinte du kwh
 
 action.acheter la moitié de ses habits d'occasion:
-Unité :%
+Unité : %
 Formule : (impact changement)*(100/bilan)
 acheter la moitié de ses habits d'occasion.impact changement :
-Unité :kgCO2e
-Formule :textile/2
+Unité : kgCO2e
+Formule : textile/2
 
 action.Trier ses déchets :
 Applicable si : alimentation . déchets . niveau d'engagement . pas du tout
-Unité :%
+Unité : %
 Formule : (impact changement)*(100/bilan)
-Trier ses déchets.impact changement
-Unité :kgCO2e
+Trier ses déchets.impact changement:
+Unité : kgCO2e
 Formule : alimentation . déchets*0.6
 
 action. boire l'eau du robinet:
 Applicable si : alimentation . boisson . eau en bouteille . affirmatif
-Unité :%
+Unité : %
 Formule : (impact changement)*(100/bilan)
 Boire l’eau du robinet.impact changement :
-Unité :kgCO2e
-Formule :430.3
+Unité : kgCO2e
+Formule : 430.3
 
 action.Acheter son matériel informatique d’occasion :
-Unité :%
+Unité : %
 Formule : (impact changement)*(100/bilan)
 Acheter sonmatériel informatique d’occasion.impact changement :
-Unité :kgCO2e
+Unité : kgCO2e
 Formule : (numérique-numérique.internet)*0.75
 Description : j’ai calculé en pourcentage l'impact de la fabrication et des matières premières 
 pour tous les appareils sur le diagramme sur le drive et j’ai fait la moyenne.
 
 action.Acheter son électroménager d’occasion :
-Unité :%
+Unité : %
 Formule : (impact changement)*(100/bilan)
 Acheter son électroménager d’occasion.impact changement :
-Unité :kgCO2e
+Unité : kgCO2e
 Formule : (mobilier)*0.5
 Description : j’ai calculé en pourcentage l'impact de la fabrication et des matières premières 
 pour tous les appareils sur le diagramme sur le drive et j’ai fait la moyenne.
