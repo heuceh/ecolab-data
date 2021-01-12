@@ -1,4 +1,5 @@
-  action. réduire la viande:
+action:
+action. réduire la viande:
   Applicable si : alimentation . nombre de plats viande > 0
 Formule : (impact changement)*(100/bilan)
 réduire par deux la viande.impact changement :
