@@ -19,7 +19,7 @@ logement . résidence . numéro:
     choix obligatoire: oui
     possibilités: 
        - R1
-       - Promologis
+       - R2
        - R3
        - R4
        - R5
@@ -48,9 +48,9 @@ logement . résidence . numéro . R1 . moyen:
   unité: kgCO2e/kWh
 logement . résidence . numéro . R1 . coloc:
   formule:  0.8
-  unité: kgCO2e/kWh
+  unité: kgCO2e
 
-logement . résidence . numéro . Promologis:
+logement . résidence . numéro . R2:
 question: Taille de votre appartement (m²) ? 
   formule: 
     une possibilité: 
@@ -60,18 +60,20 @@ question: Taille de votre appartement (m²) ?
         - coloc
   par défaut: 20m^2
   
-  logement.résidence.numéro.promologis.20m^2:
-  formule: 11/365
-  unité: kgCO2e/kWh
+  logement.résidence.numéro.R2.20m^2:
+  formule: 11*20
+  unité: kgCO2e
   
-  logement.résidence.numéro.promologis.coloc:
+  logement.résidence.numéro.R2.coloc:
   formule:
-  unité: kgCO2e/kWh
+  unité: kgCO2e
   
 logement . résidence . numéro . R3:
 logement . résidence . numéro . R4:
 logement . résidence . numéro . R5:
 logement . résidence . numéro . R6:
+formule: 13*22
+unité: kgCO2e/kWh
 logement . résidence . numéro . R7:
 logement . résidence . numéro . R8:
  
